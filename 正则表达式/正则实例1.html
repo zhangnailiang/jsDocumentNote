@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul>
+        <li>454545</li>
+        <li class="active act">88184</li>
+        <li class="active cur">24884848</li>
+        <li>34848488</li>
+    </ul>
+    <script>
+        var ali = getByClass("active");
+        console.log(aLi);
+        function getByClass(sClass, content) {
+            var re = new RegExp("\\b" + sclass + "\\b");
+            var eles = (content || document).getElementsByTagName("*");
+            var arr = [];
+            for (var i = 0; i < eles.length; i++) {
+                if (re.test(eles[i].className)) {
+                    arr.push(eles[i]);
+                }
+            }
+            return arr;
+        }
+    </script>
+</body>
+
+</html>
